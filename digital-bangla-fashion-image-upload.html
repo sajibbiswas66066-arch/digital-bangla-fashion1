@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ডিজিটাল বাংলা ফ্যাশন — ফ্যাশন, ইলেকট্রনিকস, ঘর ও রান্নাঘর এবং লাইফস্টাইল পণ্য খুঁজুন।">
+<title>ডিজিটাল বাংলা ফ্যাশন | অনলাইন শপ</title>
+<style>
+:root{--ink:#172033;--muted:#667085;--brand:#7c3aed;--brand2:#ec4899;--bg:#f7f7fb;--card:#fff;--line:#e7e7ef;--good:#087f5b}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Bengali",Arial,sans-serif;background:var(--bg);color:var(--ink)}button,input,select,textarea{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.top{background:#20113d;color:white;text-align:center;padding:8px 12px;font-size:13px}.header{background:#fff;position:sticky;top:0;z-index:5;border-bottom:1px solid var(--line)}.headin{max-width:1160px;margin:auto;padding:14px 18px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}.logo{font-weight:900;font-size:20px;color:var(--brand);white-space:nowrap}.logo span{color:var(--brand2)}.search{display:flex;flex:1;min-width:190px;gap:8px}.search input{width:100%;border:1px solid var(--line);border-radius:12px;padding:11px 13px;outline-color:var(--brand)}.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--brand);color:white;font-weight:700;display:inline-flex;justify-content:center;align-items:center;gap:6px}.btn.secondary{background:#f0eaff;color:#5b21b6}.btn.dark{background:#20113d}.btn.small{padding:7px 10px;font-size:13px}.hero{max-width:1160px;margin:22px auto 0;padding:0 18px}.heroBox{border-radius:24px;overflow:hidden;background:linear-gradient(120deg,#28124c,#7c3aed 60%,#ec4899);color:#fff;padding:34px 28px;display:grid;grid-template-columns:1.3fr .7fr;gap:20px;align-items:center;min-height:220px}.hero h1{font-size:clamp(26px,4vw,42px);line-height:1.18;margin:8px 0 12px}.hero p{color:#f4eaff;max-width:580px;line-height:1.7}.heroArt{font-size:clamp(50px,8vw,90px);text-align:center;filter:drop-shadow(0 10px 15px #210b4440)}.wrap{max-width:1160px;margin:24px auto;padding:0 18px}.sectionHead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px;flex-wrap:wrap}.sectionHead h2{font-size:22px;margin:0}.cats{display:flex;gap:9px;overflow:auto;padding:2px 0 8px}.cat{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;white-space:nowrap;color:#475467}.cat.active{background:#20113d;color:#fff;border-color:#20113d}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.product{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0;box-shadow:0 4px 18px #1b164008}.photo{height:160px;background:linear-gradient(135deg,#f4edff,#fff0f7);display:grid;place-items:center;font-size:60px;position:relative;overflow:hidden}.photo img{width:100%;height:100%;object-fit:cover;display:block}.imagePreview{display:none;max-width:100%;max-height:180px;object-fit:contain;border:1px solid var(--line);border-radius:10px;margin-top:8px}.fileHint{font-size:12px;color:var(--muted);line-height:1.5}.tag{position:absolute;left:10px;top:10px;background:#fff;color:#5b21b6;border-radius:999px;padding:4px 8px;font-size:11px;font-weight:800}.pbody{padding:13px;display:flex;flex-direction:column;gap:8px;flex:1}.pbody h3{font-size:15px;line-height:1.45;margin:0}.desc{font-size:12px;color:var(--muted);line-height:1.5;flex:1}.pfoot{display:flex;align-items:center;justify-content:space-between;gap:8px}.price{font-weight:800;font-size:14px}.priceNote{font-size:11px;color:var(--muted)}.buy{width:100%;margin-top:3px}.notice{font-size:12px;color:var(--muted);line-height:1.7;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px;margin-top:22px}.empty{grid-column:1/-1;background:white;border:1px dashed var(--line);border-radius:16px;padding:28px;text-align:center;color:var(--muted)}footer{background:#20113d;color:#eee5ff;margin-top:34px;padding:28px 18px}.footin{max-width:1160px;margin:auto;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footin p{font-size:13px;line-height:1.7;color:#d5c7ef;max-width:650px}.adminWrap{display:none;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;margin-top:22px}.adminWrap.open{display:block}.adminGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.adminGrid input,.adminGrid select,.adminGrid textarea{width:100%;border:1px solid var(--line);border-radius:9px;padding:10px}.adminGrid textarea{min-height:70px}.adminList{margin-top:16px;display:grid;gap:8px}.adminItem{border:1px solid var(--line);border-radius:10px;padding:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px}.smallprint{font-size:12px;color:var(--muted);line-height:1.65}.modal{display:none;position:fixed;inset:0;background:#17112ac9;z-index:10;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modalBox{background:#fff;border-radius:18px;padding:22px;max-width:460px;width:100%;max-height:90vh;overflow:auto}.modalBox h2{margin-top:0}.modalBox input{width:100%;padding:11px;border:1px solid var(--line);border-radius:9px;margin:5px 0 12px}.modalBox .close{float:right;border:0;background:#eee;border-radius:8px;padding:6px 10px}.disclose{font-size:11px;color:#6b7280}
+@media(max-width:850px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.heroBox{grid-template-columns:1fr .4fr}.photo{height:140px}}
+@media(max-width:600px){.headin{gap:10px;padding:12px}.logo{font-size:18px}.search{order:3;flex-basis:100%}.hero{margin-top:14px}.heroBox{padding:24px 19px;grid-template-columns:1fr}.heroArt{display:none}.hero p{font-size:14px}.wrap{margin:20px auto;padding:0 12px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo{height:125px;font-size:48px}.pbody{padding:10px;gap:7px}.pbody h3{font-size:13px}.price{font-size:13px}.buy{font-size:12px;padding:9px 6px}.adminGrid{grid-template-columns:1fr}.sectionHead h2{font-size:19px}}
+</style>
+</head>
+<body>
+<div class="top">✨ আপনার পছন্দের পণ্য খুঁজুন সহজে • কেনাকাটা হবে দারাজে</div>
+<header class="header"><div class="headin">
+<a class="logo" href="#" aria-label="হোম">ডিজিটাল বাংলা <span>ফ্যাশন</span></a>
+<div class="search"><input id="searchInput" type="search" placeholder="পণ্য খুঁজুন... যেমন টি-শার্ট, হেডফোন" aria-label="পণ্য খুঁজুন"><button class="btn" id="searchBtn">খুঁজুন</button></div>
+<button class="btn secondary" id="adminToggle">⚙ অ্যাডমিন</button>
+</div></header>
+<section class="hero"><div class="heroBox">
+<div><div style="font-weight:800;color:#f5d0fe">DIGITAL BANGLA FASHION</div><h1>আপনার পছন্দ,<br>এক জায়গায়</h1><p>ফ্যাশন থেকে টেকনোলজি—দৈনন্দিন দরকারি পণ্য খুঁজুন। পছন্দের পণ্য বেছে নিয়ে দারাজে গিয়ে বিস্তারিত দেখুন ও কিনুন।</p><a href="#products" class="btn" style="background:#fff;color:#5b21b6">পণ্য দেখুন ↓</a></div>
+<div class="heroArt" aria-hidden="true">🛍️ ✨<br>👕 🎧</div>
+</div></section>
+<main class="wrap" id="products">
+<div class="sectionHead"><h2>জনপ্রিয় পণ্য</h2><span id="countLabel" class="smallprint">পণ্য বাছাই করুন</span></div>
+<div class="cats" id="categories"></div>
+<div class="grid" id="productGrid"></div>
+<div class="notice"><b>অ্যাফিলিয়েট নোটিশ:</b> এই ওয়েবসাইটের কিছু লিংক অ্যাফিলিয়েট লিংক হতে পারে। আপনি ওই লিংকে গিয়ে যোগ্য কেনাকাটা করলে আমরা কমিশন পেতে পারি—আপনার অতিরিক্ত খরচ না-ও হতে পারে। পণ্যের বর্তমান দাম, স্টক, ডেলিভারি ও শর্ত দারাজের পেজে যাচাই করুন।</div>
+<section class="adminWrap" id="adminPanel">
+<div class="sectionHead"><h2>অ্যাডমিন প্যানেল</h2><button class="btn secondary small" id="closeAdmin">বন্ধ করুন</button></div>
+<p class="smallprint">এই ডেমোতে পণ্য ও নির্বাচিত ছবি শুধু এই ব্রাউজারের local storage-এ থাকবে। এটি নিরাপদ লগইন, অনলাইন ডাটাবেস বা সব ডিভাইসে সিঙ্ক হওয়া অ্যাডমিন সিস্টেম নয়। সবার জন্য পণ্য/ছবি প্রকাশ করতে পরে অনলাইন ডাটাবেস ও ইমেজ স্টোরেজ সংযুক্ত করতে হবে।</p>
+<form id="productForm">
+<div class="adminGrid">
+<input id="pName" placeholder="পণ্যের নাম" required>
+<select id="pCat"><option value="fashion">ফ্যাশন</option><option value="electronics">ইলেকট্রনিকস</option><option value="home">ঘর ও রান্নাঘর</option><option value="beauty">বিউটি ও লাইফস্টাইল</option></select>
+<input id="pPrice" placeholder="দাম (ঐচ্ছিক, ৳)" inputmode="numeric">
+<input id="pEmoji" placeholder="ছবি না দিলে ইমোজি (যেমন 👕)" value="🛍️"><div style="grid-column:1/-1"><label for="pImage"><b>প্রোডাক্টের ছবি যোগ করুন</b></label><input id="pImage" type="file" accept="image/*" style="display:block;width:100%;margin-top:8px"><div class="fileHint">JPG, PNG বা WebP ছবি বাছুন। ছোট ছবি ব্যবহার করুন (আদর্শভাবে 500 KB-এর নিচে)। এই ডেমোতে ছবি এই ব্রাউজারেই সংরক্ষিত হবে।</div><img id="imagePreview" class="imagePreview" alt="ছবির প্রিভিউ"></div>
+<input id="pLink" type="url" placeholder="আপনার অনুমোদিত Daraz affiliate URL" required>
+<textarea id="pDesc" placeholder="পণ্যের সংক্ষিপ্ত বিবরণ"></textarea>
+</div><p><button class="btn" type="submit">＋ পণ্য যোগ করুন</button></p>
+</form>
+<div class="adminList" id="adminList"></div>
+</section>
+</main>
+<footer><div class="footin"><div><div class="logo" style="color:white">ডিজিটাল বাংলা <span>ফ্যাশন</span></div><p>একটি পণ্য-আবিষ্কার ও অ্যাফিলিয়েট শপের ডেমো। পণ্য কেনা, পেমেন্ট, ডেলিভারি ও রিটার্ন দারাজের নিয়ম অনুযায়ী হবে।</p></div><div><b>ক্যাটাগরি</b><p>ফ্যাশন • ইলেকট্রনিকস<br>ঘর ও রান্নাঘর • বিউটি ও লাইফস্টাইল</p></div></div></footer>
+<div class="modal" id="setupModal"><div class="modalBox"><button class="close" id="modalClose">✕</button><h2>অ্যাডমিন প্যানেল খুলুন</h2><p class="smallprint">এটি কেবল এই ডেমোর সাধারণ প্রবেশ-কোড; নিরাপদ লগইন নয়। প্রকাশের আগে বাস্তব সুরক্ষিত অ্যাডমিন ব্যবস্থা ব্যবহার করুন।</p><label for="adminPass">ডেমো কোড লিখুন</label><input id="adminPass" type="password" placeholder="কোড: 1234"><button class="btn" id="unlockBtn" style="width:100%">প্যানেল খুলুন</button><p id="passMsg" class="smallprint"></p></div></div>
+<script>
+const cats=[{id:'all',name:'সব পণ্য',icon:'✨'},{id:'fashion',name:'ফ্যাশন',icon:'👕'},{id:'electronics',name:'ইলেকট্রনিকস',icon:'🎧'},{id:'home',name:'ঘর ও রান্নাঘর',icon:'🏠'},{id:'beauty',name:'বিউটি ও লাইফস্টাইল',icon:'🧴'}];
+const defaults=[
+{id:'demo1',name:'ক্যাজুয়াল টি-শার্ট',cat:'fashion',price:'',emoji:'👕',desc:'দৈনন্দিন ব্যবহারের জন্য স্টাইলিশ টি-শার্ট।',link:'https://www.daraz.com.bd/',tag:'ফ্যাশন'},
+{id:'demo2',name:'ক্যাজুয়াল শার্ট',cat:'fashion',price:'',emoji:'👔',desc:'আপনার পছন্দমতো শার্টের ডিজাইন খুঁজুন।',link:'https://www.daraz.com.bd/',tag:'জনপ্রিয়'},
+{id:'demo3',name:'ওয়্যারলেস হেডফোন',cat:'electronics',price:'',emoji:'🎧',desc:'মিউজিক ও দৈনন্দিন ব্যবহারের হেডফোন দেখুন।',link:'https://www.daraz.com.bd/',tag:'টেক'},
+{id:'demo4',name:'স্মার্ট ওয়াচ',cat:'electronics',price:'',emoji:'⌚',desc:'বিভিন্ন ধরনের স্মার্ট ওয়াচের কালেকশন।',link:'https://www.daraz.com.bd/',tag:'গ্যাজেট'},
+{id:'demo5',name:'কিচেন স্টোরেজ সেট',cat:'home',price:'',emoji:'🍱',desc:'রান্নাঘর গুছিয়ে রাখতে দরকারি পণ্য।',link:'https://www.daraz.com.bd/',tag:'ঘর'},
+{id:'demo6',name:'LED ডেস্ক ল্যাম্প',cat:'home',price:'',emoji:'💡',desc:'পড়ার টেবিল বা কাজের জায়গার জন্য।',link:'https://www.daraz.com.bd/',tag:'দরকারি'},
+{id:'demo7',name:'স্কিনকেয়ার সেট',cat:'beauty',price:'',emoji:'🧴',desc:'বিভিন্ন বিউটি ও পার্সোনাল কেয়ার পণ্য খুঁজুন।',link:'https://www.daraz.com.bd/',tag:'লাইফস্টাইল'},
+{id:'demo8',name:'লেডিস থ্রি-পিস',cat:'fashion',price:'',emoji:'👗',desc:'বিভিন্ন রঙ ও ডিজাইনের থ্রি-পিস দেখুন।',link:'https://www.daraz.com.bd/',tag:'লেডিস'}
+];
+let products=loadProducts();let activeCat='all';let query='';
+function loadProducts(){try{const s=localStorage.getItem('dbfProducts');return s?JSON.parse(s):defaults.slice()}catch(e){return defaults.slice()}}
+function saveProducts(){try{localStorage.setItem('dbfProducts',JSON.stringify(products));return true}catch(e){alert('সংরক্ষণ করা যায়নি। ছবির ফাইলটি বড় হতে পারে বা ব্রাউজারের স্টোরেজ পূর্ণ। ছোট ছবি ব্যবহার করুন।');return false}}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function renderCats(){document.getElementById('categories').innerHTML=cats.map(c=>`<button class="cat ${activeCat===c.id?'active':''}" data-cat="${c.id}">${c.icon} ${c.name}</button>`).join('');document.querySelectorAll('[data-cat]').forEach(b=>b.onclick=()=>{activeCat=b.dataset.cat;renderCats();renderProducts()})}
+function renderProducts(){const list=products.filter(p=>(activeCat==='all'||p.cat===activeCat)&&(`${p.name} ${p.desc} ${p.cat}`.toLowerCase().includes(query.toLowerCase())));document.getElementById('countLabel').textContent=`${list.length}টি পণ্য`;const grid=document.getElementById('productGrid');if(!list.length){grid.innerHTML='<div class="empty">কোনো পণ্য পাওয়া যায়নি। অন্য শব্দ দিয়ে খুঁজুন।</div>';return}grid.innerHTML=list.map(p=>`<article class="product"><div class="photo"><span class="tag">${esc(p.tag||cats.find(c=>c.id===p.cat)?.name||'পণ্য')}</span>${p.image?`<img src="${p.image}" alt="${esc(p.name)}" loading="lazy">`:`<span>${esc(p.emoji||'🛍️')}</span>`}</div><div class="pbody"><h3>${esc(p.name)}</h3><div class="desc">${esc(p.desc||'পণ্যের বিস্তারিত দেখতে দারাজে যান।')}</div><div class="pfoot"><div><div class="price">${p.price?`৳${esc(p.price)}`:'দাম দেখুন'}</div><div class="priceNote">দারাজে যাচাই করুন</div></div></div><a class="btn buy" href="${safeLink(p.link)}" target="_blank" rel="noopener noreferrer sponsored">দারাজে কিনুন ↗</a><div class="disclose">লিংকটি অ্যাফিলিয়েট হলে কমিশন আসতে পারে</div></div></article>`).join('');renderAdminList()}
+function safeLink(url){try{const u=new URL(url);return ['https:','http:'].includes(u.protocol)?u.href:'https://www.daraz.com.bd/'}catch(e){return 'https://www.daraz.com.bd/'}}
+function renderAdminList(){const el=document.getElementById('adminList');if(!el)return;el.innerHTML=products.map(p=>`<div class="adminItem"><span><b>${esc(p.name)}</b><br><span class="smallprint">${esc(cats.find(c=>c.id===p.cat)?.name||'পণ্য')}</span></span><button class="btn small" data-delete="${esc(p.id)}" style="background:#b42318">মুছুন</button></div>`).join('');el.querySelectorAll('[data-delete]').forEach(b=>b.onclick=()=>{if(confirm('এই পণ্যটি এই ব্রাউজারের তালিকা থেকে মুছবেন?')){products=products.filter(p=>p.id!==b.dataset.delete);saveProducts();renderProducts()}})}
+document.getElementById('searchBtn').onclick=()=>{query=document.getElementById('searchInput').value.trim();renderProducts()};
+document.getElementById('searchInput').addEventListener('keydown',e=>{if(e.key==='Enter'){query=e.target.value.trim();renderProducts()}});
+document.getElementById('adminToggle').onclick=()=>document.getElementById('setupModal').classList.add('open');
+document.getElementById('modalClose').onclick=()=>document.getElementById('setupModal').classList.remove('open');
+document.getElementById('unlockBtn').onclick=()=>{if(document.getElementById('adminPass').value==='1234'){document.getElementById('setupModal').classList.remove('open');document.getElementById('adminPanel').classList.add('open');document.getElementById('passMsg').textContent='';document.getElementById('adminPanel').scrollIntoView({behavior:'smooth'})}else document.getElementById('passMsg').textContent='কোড মেলেনি। ডেমো কোড 1234।'};
+document.getElementById('closeAdmin').onclick=()=>document.getElementById('adminPanel').classList.remove('open');
+const imageInput=document.getElementById('pImage');
+const imagePreview=document.getElementById('imagePreview');
+let selectedImage='';
+imageInput.addEventListener('change',()=>{
+  const file=imageInput.files && imageInput.files[0];
+  selectedImage='';
+  imagePreview.style.display='none';
+  imagePreview.removeAttribute('src');
+  if(!file)return;
+  if(!file.type.startsWith('image/')){alert('অনুগ্রহ করে একটি ছবি ফাইল বাছুন।');imageInput.value='';return;}
+  if(file.size>700*1024){alert('ছবিটি 700 KB-এর বেশি। অনুগ্রহ করে ছোট/কমপ্রেস করা ছবি বাছুন, যাতে ব্রাউজারের স্টোরেজ পূর্ণ না হয়।');imageInput.value='';return;}
+  const reader=new FileReader();
+  reader.onload=()=>{selectedImage=String(reader.result||'');imagePreview.src=selectedImage;imagePreview.style.display='block';};
+  reader.onerror=()=>alert('ছবিটি পড়া যায়নি। আবার চেষ্টা করুন।');
+  reader.readAsDataURL(file);
+});
+document.getElementById('productForm').onsubmit=e=>{
+  e.preventDefault();
+  const link=document.getElementById('pLink').value.trim();
+  if(!/^https?:\/\//i.test(link)){alert('একটি বৈধ HTTPS affiliate link দিন।');return;}
+  const product={id:'p'+Date.now(),name:document.getElementById('pName').value.trim(),cat:document.getElementById('pCat').value,price:document.getElementById('pPrice').value.trim(),emoji:document.getElementById('pEmoji').value.trim()||'🛍️',image:selectedImage,desc:document.getElementById('pDesc').value.trim(),link:link,tag:'নতুন'};
+  products.unshift(product);
+  if(!saveProducts()){products=products.filter(p=>p.id!==product.id);return;}
+  e.target.reset();selectedImage='';imagePreview.style.display='none';imagePreview.removeAttribute('src');document.getElementById('pEmoji').value='🛍️';
+  activeCat='all';query='';document.getElementById('searchInput').value='';renderCats();renderProducts();
+  alert('পণ্য ও ছবি এই ব্রাউজারে যোগ হয়েছে। অন্য ডিভাইস বা সব ভিজিটরের জন্য দেখাতে অনলাইন ডাটাবেস/ইমেজ স্টোরেজ সংযুক্ত করতে হবে।');
+};
+renderCats();renderProducts();
+</script>
+</body>
+</html>
